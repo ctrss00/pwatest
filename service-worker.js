@@ -23,6 +23,7 @@ self.addEventListener('activate', event => {
 	log('Activate');
 });
 
+//--spelling error
 self.addEventListener('fetch', event => {
 	log('fetch->' + event.request.url);
 });

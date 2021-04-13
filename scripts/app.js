@@ -60,6 +60,7 @@
 
   // TODO: 아래에 서비스워커 등록
 	// navigator (브라우저)에 serviceWorker 기능이 있는지 확인
+<<<<<<< HEAD
 	/*
 	if ('serviceWorker' in navigator) {
 	  // 서비스워커 설치시 DOM 블로킹을 막아준다.
@@ -76,6 +77,12 @@
 	  });
 	}else{
 		console.log("엄쓰요1");
+=======
+		if ('serviceWorker' in navigator) {
+		navigator.serviceWorker.register('./service-worker.js').then(() => {
+			console.log("Service Worker Registered");
+		});
+>>>>>>> 14083343f761581b50bbd754c874fe39e8eb7d65
 	}
 	*/
 	if ('serviceWorker' in navigator) {
