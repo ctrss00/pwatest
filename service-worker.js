@@ -23,7 +23,7 @@ self.addEventListener('activate', event => {
 	log('Activate');
 });
 
-self.addEventListener('fatch', event => {
+self.addEventListener('fetch', event => {
 	log('fetch->' + event.request.url);
 });
 
